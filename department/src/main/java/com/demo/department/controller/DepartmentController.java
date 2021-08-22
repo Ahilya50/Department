@@ -21,13 +21,13 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	
-	@PostMapping("/")
+	@PostMapping("/save")
 	public Department saveDepartment(@RequestBody Department department) {
 		//log.info("");
 		return departmentService.saveDepartment(department);
 	}
 	
-	@GetMapping("/test")
+	@GetMapping("/")
 	public String test()
 	{
 		return "Hello...WElcome!!!";
